@@ -1,0 +1,58 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F5F5F1;
+}
+
+img {
+  max-width: 100%;
+}
+
+.input-group .form-control{
+  position: relative;
+  z-index: 2;
+    float: left;
+    width: 30%;
+    margin-bottom: 0;
+    border-right: none;
+}
+
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: -1px;
+    right: 631px;
+    height: 34px;
+    color: white;
+    background-color: #34A8C4;
+    border-left: none;
+}
+
+#etsy-logo{
+  background-repeat: no-repeat;
+  z-index: 900;
+  background-image: url(https://www.etsy.com/assets/dist/images/etsylogo.20170111162343.png);
+}
+
+.col-md-3 {
+    height: 310px;
+    width: 25%;
+}
+
+.hbtitle{
+  width: 225px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
