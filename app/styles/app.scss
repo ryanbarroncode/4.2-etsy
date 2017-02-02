@@ -12,10 +12,23 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
   box-sizing: border-box;
 }
 
+hr{
+  width: 263px;
+}
+
 li{
   list-style: none;
   line-height: 32px;
+  padding-left: 40px;
 }
+
+ul{
+  padding: 0;
+  background-color: white;
+  margin-left: -15px;
+  width: 290px;
+}
+
 body{
   background-color: #F5F5F1;
 }
@@ -30,6 +43,7 @@ body{
     margin-bottom: 0;
     border-right: none;
 }
+
 .navbar-form{
   padding-left: 100px;
   margin-top: 20px;
@@ -40,21 +54,27 @@ body{
   border-bottom: 1px solid lightgrey;
   height: 80px;
 }
+
 .header > img{
   margin-left: 180px;
 }
 
 .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
-    z-index: 2;
-    margin-left: -1px;
-    right: 152px;
-    height: 34px;
-    width: 80px;
-    color: white;
-    background-color: #34A8C4;
-    border-left: none;
+  z-index: 2;
+  margin-left: -1px;
+  right: 152px;
+  height: 34px;
+  width: 80px;
+  color: white;
+  background-color: #34A8C4;
+  border-left: none;
 }
 
+h5 {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
 .btn{
   background-color: #269EBE;
   color: white;
@@ -76,10 +96,13 @@ padding-left: 16px;
     line-height: 1.33333;
     border-radius: 6px;
     margin-left: 10px;
+    background-color: white;
 }
 
-.sell-on-etsy{
-  margin-left: 470px;
+.sell-on-etsy {
+  font-size: 14px;
+  margin-left: 360px;
+  color: #0192B5;
 }
 
 .etsy-logo-img{
@@ -97,15 +120,19 @@ padding-left: 16px;
   padding-bottom: 10px;
   border-bottom: 1px solid lightgrey;
   background-color: white;
+  margin-bottom: 30px;
 }
+
 .topmenu > span{
   margin-left: 20px;
-
+  color: #777;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .topmenu > .special{
-  margin-left: 370px;
+  margin-left: 130px;
+  color: #777;
 }
 
 .categories{
@@ -135,7 +162,7 @@ padding-left: 16px;
 
 .hbprice{
   float: right;
-  right: 65px;
+  right: 25px;
   position: absolute;
   color: #6BBA31;
 }
