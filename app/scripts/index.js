@@ -1,6 +1,5 @@
-var handlebars = require("handlebars");
+var handlebars = require('handlebars');
 var $ = require('jquery');
-var underscore = require('underscore');
 
 var source=$('.tile-template').html();
 var template = handlebars.compile(source);
