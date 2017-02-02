@@ -1,40 +1,27 @@
 var handlebars = require('handlebars');
 var $ = require('jquery');
 
-var source=$('.tile-template').html();
+var source = $('.tile-template').html();
 var template = handlebars.compile(source);
-$('.template-container').append(template());
 
 var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=yarn&includes=Images,Shop";
 
 
 fetchJSONP(url, function(data) {
-  // do something with data
-  data.results.forEach(function(item){
-    var itemInfo = {
-      hbimage: item.Images[0].url_170x135,
-      title: item.title,
-      price: item.price,
-      shopName: item.Shop.shop_name
-    };
-    console.log(item.title);
-    $('.template-container').append(template(itemInfo));
+    // do something with data
+    data.results.forEach(function(item) {
+        var itemInfo = {
+            hbimage: item.Images[0].url_170x135,
+            title: item.title,
+            price: item.price,
+            shopName: item.Shop.shop_name
+        };
+        console.log(itemInfo);
+        $('.template-container').append(template(itemInfo));
 
-  });
-  console.log(data.results);
+    });
+    console.log(data.results);
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,154 +1,180 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>4.2 etsy</title>
     <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
+</head>
+
+<body>
 
     <div class="header container-fliud">
-      <div class="row">
-        <div class="col-md-12">
-          <form class="navbar-form navbar-left" role="search">
-            <a href="#"> <img src="https://www.etsy.com/assets/dist/images/etsylogo.20170111162343.png" alt=""> </a>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search for shops or items">
-            </div>
-            <button type="submit" class="btn btn-default">Search</button>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="navbar-form navbar-left" role="search">
+                    <a href="#"> <img src="https://www.etsy.com/assets/dist/images/etsylogo.20170111162343.png" alt=""> </a>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search for shops or items">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search</button>
 
-            <a class="sell-on-etsy top-right-menu" href="#">  <span>Sell on Etsy</span></a>
-            <a class="top-right-menu" href="#"><span>Register</span></a>
-            <button type="button" class="btn btn-default btn-lg">
+                    <a class="sell-on-etsy top-right-menu" href="#"> <span>Sell on Etsy</span></a>
+                    <a class="top-right-menu" href="#"><span>Register</span></a>
+                    <button type="button" class="btn btn-default btn-lg">
               <span class="sign-in" aria-hidden="true"><a href="#">Sign In</a></span>
             </button>
-            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 
-          </form>
+                </form>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="category-nav container-fliud">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="topmenu">
-              <span class="special">Clothing &amp Accessories</span>
-              <span>Jewelry</span>
-              <span>Craft Supplies &amp Tools</span>
-              <span>Weddings</span>
-              <span>Entertainment</span>
-              <span>Home &amp Living</span>
-              <span>Kids &amp Baby</span>
-              <span>Vintage</span>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="topmenu">
+                    <span class="special">Clothing &amp Accessories</span>
+                    <span>Jewelry</span>
+                    <span>Craft Supplies &amp Tools</span>
+                    <span>Weddings</span>
+                    <span>Entertainment</span>
+                    <span>Home &amp Living</span>
+                    <span>Kids &amp Baby</span>
+                    <span>Vintage</span>
+                </div>
+                <!--  this is where all the categories go like clothing and accessories -->
             </div>
-          <!--  this is where all the categories go like clothing and accessories -->
         </div>
-      </div>
     </div>
 
 
     <div class="catagories container">
-      <div class="row ">
-        <div class="col-lg-3">
-          <!--sidebar -->
-          <h4>Show Results for:</h4>
-          <ul>
-            <h5>All categories</h5>
-            <a href="#"><li>Craft Supplies &amp Tools</li></a>
-            <li>Accessories</li>
-            <li>Clothing</li>
-            <li>Jewerly</li>
-            <li>Art &amp Collectibles</li>
-            <li>Bags &amp Purses</li>
-            <li>Toys &amp Games</li>
-            <li>Bath &amp Beauty</li>
-            <li>Paper & Party Supplies</li>
-            <li>Shoes</li>
-            <li>Pet Supplies</li>
-            <li>Books, Movies &amp Music</li>
-            <li>Electronics &amp Accessories</li>
-            <li>Weddings</li>
-          </ul>
+        <div class="row ">
+            <div class="col-lg-3">
+                <!--sidebar -->
+                <h4>Show Results for:</h4>
+                <ul>
+                    <h5>All categories</h5>
+                    <a href="#">
+                        <li>Craft Supplies &amp Tools</li>
+                    </a>
+                    <li>Accessories</li>
+                    <li>Clothing</li>
+                    <li>Jewerly</li>
+                    <li>Art &amp Collectibles</li>
+                    <li>Bags &amp Purses</li>
+                    <li>Toys &amp Games</li>
+                    <li>Bath &amp Beauty</li>
+                    <li>Paper & Party Supplies</li>
+                    <li>Shoes</li>
+                    <li>Pet Supplies</li>
+                    <li>Books, Movies &amp Music</li>
+                    <li>Electronics &amp Accessories</li>
+                    <li>Weddings</li>
+                </ul>
 
-          <span>Refine your search</span>
+                <span>Refine your search</span>
 
-          <div class="location row">
-            <div class="col-lg-6">
-                <h4>Shop location</h4>
-                <form action="">
-                  <input type="radio" name="gender" value="male"> Box1<br>
-                  <input type="radio" name="gender" value="female"> Box 2<br>
-                  <input type="radio" name="gender" value="other"> Box 3<br>
-                  <input type="radio" name="gender" value="other"> Box 4<br>
-                  <input type="radio" name="gender" value="other"> Box 5<br>
-                  </form>
-                    <br>
-                    <br>
-              <span>Choose a custom location</span>
-              <hr>
+                <div class="location row">
+                    <div class="refine-search col-md-6">
+                        <h4>Shop location</h4>
+                        <form action="">
+                            <input type="radio" name="gender" value="male"> Anywhere<br>
+                            <input type="radio" name="gender" value="female"> United States<br>
+                        </form>
 
-              <h4>Item type</h4>
+                        <span>Choose a custom location</span>
 
-              <form action="">
-                <input type="radio" name="gender" value="male"> Cool stuff<br>
-                <input type="radio" name="gender" value="female"> Neat stuff to see<br>
-                <input type="radio" name="gender" value="box3"> Whoah thats cool<br>
-                <input type="radio" name="gender" value="box4"> Baths<br>
-                <input type="radio" name="gender" value="other"> Oceans<br>
-              </form>
+                        <hr>
+                        <h5>Item type</h5>
 
-               <hr>
-              <h4>Price</h4>
+                        <form action="">
+                            <input type="radio" name="gender" value="male"> All items<br>
+                            <input type="radio" name="gender" value="female"> Handmade<br>
+                            <input type="radio" name="gender" value="box3"> Vintage<br>
+                        </form>
 
-              <form action="">
-                <input type="radio" name="gender" value="male"> Male
-                <input type="radio" name="gender" value="female"> Female
-                <input type="radio" name="gender" value="other"> Other
-                </form>
+                        <hr>
+                        <h5>Price</h5>
 
-              <form action="">
-                <input type="radio" name="gender" value="male"> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
-                <input type="radio" name="gender" value="other"> Other
-                <input type="radio" name="gender" value="other"> Other
-                <input type="radio" name="gender" value="other"> Other
-                </form>
+                        <form action="">
+                            <input type="radio" name="gender" value="male"> Any price <br>
+                            <input type="radio" name="gender" value="female"> Under $25 <br>
+                            <input type="radio" name="gender" value="male"> $25 to $50 <br>
+                            <input type="radio" name="gender" value="female"> $50 to $100 <br>
+                            <input type="radio" name="gender" value="male"> Over $100 <br>
+                        </form>
 
-              <form action="">
-                <input type="radio" name="gender" value="male"> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
-                <input type="radio" name="gender" value="other"> Other
-                </form>
+                        <hr>
+                        <h5>Filter by color</h5>
+                        <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn-red btn-default"></button>
+                          <button type="button" class="btn-orange btn-default"></button>
+                          <button type="button" class="btn-yellow btn-default"></button>
+                          <button type="button" class="btn-green btn-default"></button>
+                          <button type="button" class="btn-blue btn-default"></button>
+                          <button type="button" class="btn-purple btn-default"></button>
+                          <button type="button" class="btn-black btn-default"></button>
+                          <button type="button" class="btn-white btn-default"></button>
+                        </div>
+                          <hr>
 
-            </div><!-- /.col-lg-6 -->
-          </div><!-- /.row -->
+                        <h5>Ordering Options</h5>
+                        <form action="">
+                            <input type="radio" name="gender" value="male"> Acceptable Etsy gift cards <br>
+                            <input type="radio" name="gender" value="female"> Customizable <br>
+                          </form>
 
+                          <hr>
+                          <h5>Ship to</h5>
+                          <span>United states</span>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="row template-container">
+                    <!-- Using this space to populate my page with listings -->
+                </div>
+            </div>
         </div>
+    </div>
 
-
-        <div class="col-md-9">
-          <div class="row template-container">            <!-- Using this space to populate my page with listings -->
-          </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group emailbar">
+          <input type="text" class="form-control2" placeholder="Enter your Email">
+          <span class="input-group-btn">
+            <button class="btn2 btn-default" type="button">Subscribe</button>
+          </span>
         </div>
       </div>
     </div>
+    <hr class="bottom-hr">
 
 
 
 
     <script class="tile-template" type="text/x-handlebars-template">
-      <div class="col-md-3 product-tile">
-        <div class="image-size">
-        <img class="hbimage" src="{{ hbimage }}" alt="">
-        <div class="hbtitle">{{title}}</div>
-        <span class="shopName">{{shopName}}</span>
-        <span class ="hbprice">{{price}}</span>
+        <div class="col-md-3 product-tile">
+            <div class="image-size">
+                <img class="hbimage" src="{{ hbimage }}" alt="">
+                <div class="hbtitle">{{title}}</div>
+                <span class="shopName">{{shopName}}</span>
+                <span class="hbprice">{{price}}</span>
+            </div>
         </div>
-      </div>
     </script>
 
     <script src="js/bundle.js"></script>
-  </body>
+</body>
+
 </html>
