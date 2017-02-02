@@ -12,47 +12,136 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
   box-sizing: border-box;
 }
 
+li{
+  list-style: none;
+  line-height: 32px;
+}
 body{
   background-color: #F5F5F1;
 }
 
-img {
-  max-width: 100%;
-}
+// img {
+//   max-width: 100%;
+// }
 
-.input-group .form-control{
+.navbar-form .form-control{
   position: relative;
-  z-index: 2;
-    float: left;
-    width: 30%;
+  width: 480px;
     margin-bottom: 0;
     border-right: none;
+}
+.navbar-form{
+  padding-left: 100px;
+  margin-top: 20px;
+}
+
+.header{
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+  height: 80px;
+}
+.header > img{
+  margin-left: 180px;
 }
 
 .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
     z-index: 2;
     margin-left: -1px;
-    right: 631px;
+    right: 152px;
     height: 34px;
+    width: 80px;
     color: white;
     background-color: #34A8C4;
     border-left: none;
 }
 
-#etsy-logo{
-  background-repeat: no-repeat;
-  z-index: 900;
-  background-image: url(https://www.etsy.com/assets/dist/images/etsylogo.20170111162343.png);
+.btn{
+  background-color: #269EBE;
+  color: white;
 }
 
-.col-md-3 {
-    height: 310px;
-    width: 25%;
+.glyphicon{
+font-size: 30px;
+top: 11px;
+padding-left: 16px;
+}
+
+.top-right-menu{
+  margin-left: 10px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 4px 8px;
+    font-size: 16px;
+    line-height: 1.33333;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.sell-on-etsy{
+  margin-left: 470px;
+}
+
+.etsy-logo-img{
+  width: 75px;
+}
+
+// #etsy-logo{
+//   background-repeat: no-repeat;
+//   z-index: 900;
+//   background-image: url(https://www.etsy.com/assets/dist/images/etsylogo.20170111162343.png);
+// }
+
+.topmenu{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+}
+.topmenu > span{
+  margin-left: 20px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.topmenu > .special{
+  margin-left: 370px;
+}
+
+.categories{
+  padding-top: 10px;
+}
+
+.location{
+  background-color: white;
+  padding-bottom: 10px;
+
+}
+
+.product-tile{
+  margin-bottom: 20px;
+}
+
+.hbimage{
+  position: relative;
+  min-width: 100%;
 }
 
 .hbtitle{
-  width: 225px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
+
+.hbprice{
+  float: right;
+  right: 65px;
+  position: absolute;
+  color: #6BBA31;
+}
+
+// .hbpicture{
+//   min-width: 100%;
+//   width: 225px;
+//   height: 170px;
+// }
